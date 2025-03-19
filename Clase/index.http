@@ -63,7 +63,7 @@ api_key: Api-publica-123
 {
     "name" : "Nombre",
     "age" : 2,
-    "email": "sasa1@gmail.com",
+    "email": "sasalara@gmail.com",
     "password": "12345678"
 }
 
@@ -73,7 +73,7 @@ Content-Type: application/json
 api_key: Api-publica-123
 
 {
-    "email": "sasa2@gmail.com",
+    "email": "sasalara@gmail.com",
     "password": "12345678"
 }
 
@@ -94,4 +94,17 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2M4MzUyZ
 
 {
     "role": ["admin"]
+}
+
+###
+POST http://localhost:3001/api/mail
+Content-Type: application/json
+api_key: Api-publica-123
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2RhYTQyYjc4MzUwNjNiN2MyMGExN2EiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNzQyMzgyMTMxLCJleHAiOjE3NDIzODkzMzF9.ieros-0ezrpmIRbHYXQZ6NFgj2N4FjSG9fXFepgA7tw
+
+{
+    "subject": "holi",
+    "text": "holi buenas",
+    "to": "saray.hershkovich@live.u-tad.com",
+    "from": "hola@gmail.com"
 }
