@@ -63,7 +63,7 @@ api_key: Api-publica-123
 {
     "name" : "Nombre",
     "age" : 2,
-    "email": "sasalara@gmail.com",
+    "email": "sasalara1@gmail.com",
     "password": "12345678"
 }
 
@@ -108,3 +108,4 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2RhYTQyY
     "to": "saray.hershkovich@live.u-tad.com",
     "from": "hola@gmail.com"
 }
+

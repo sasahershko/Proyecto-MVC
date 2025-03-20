@@ -5,18 +5,8 @@ const {matchedData} = require('express-validator');
 
 const getItems = async (req, res) => {
     try {
-        // const user = req.user;
-        // console.log(user.role);
-
-        // if (user.role.includes('admin')) {
-        //     const data = await tracksModel.find({});
-        //     res.send({ data, user }); //tengo todos los datos del cliente
-        // } else {
-        //     res.send({ message: 'You are not an admin' });
-        // }
-        const data = await tracksModel.find({});
-        res.send({ data });
-
+        const data = await tracksModel.find();
+        res.send(data);
     } catch (error) {
         handleHttpError(res, 'ERROR_GET_ITEMS');
     }
@@ -37,9 +27,9 @@ const getItem = async (req, res) => {
 
 const createItem = async (req, res) => {
     try {
-        console.log(req.body);
+        // console.log(req.body);
         const body = matchedData(req); //Nos limpia los campos
-        console.log(body);
+        // console.log(body);
         const data = await tracksModel.create(body);
         res.json( data )
     } catch (error) {

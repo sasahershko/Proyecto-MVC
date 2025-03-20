@@ -1,0 +1,37 @@
+
+### Crear nuevo usuario
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+  "name": "Juan Pérez",
+  "email": "juan@example.com",
+  "age": 2,
+  "password": "1234",
+  "role": "admin"
+}
+
+
+###
+POST http://localhost:3001/api/tracks
+Content-Type: application/json
+
+{
+    "name": "track example3",
+    "album": "album example3",
+    "cover": "cover example3",
+    "artist_name": "name example3",
+    "artist_nickname": "nickname example3",
+    "artist_age": 23,
+    "artist_nationality": "nationality example3",
+    "duration_start": 0,
+    "duration_end": 2,
+    "mediaId": "1234"
+}
+
+###
+GET http://localhost:3001/api/tracks
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQyNDYyNzY1LCJleHAiOjE3NDI0Njk5NjV9.uoY06NgxJXcfqALmoOzJjGFNQTKW38VoyZh0y9fiXK0
+api_key: Api-publica-123
+
+###
